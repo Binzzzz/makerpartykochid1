@@ -1,70 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>Maker Party Kochi</title>
-
-    <!-- Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom CSS -->
-    <link href="css/main.css" rel="stylesheet">
-    <link href="css/shapes.css" rel="stylesheet">
-     <link href="css/letters.css" rel="stylesheet">
-      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <!-- Custom Fonts -->
-    <!--
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+<title>Maker Party Kochi</title>
+<!-- Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<!-- Custom CSS -->
+<link href="css/main.css" rel="stylesheet">
+<link href="css/shapes.css" rel="stylesheet">
+<link href="css/letters.css" rel="stylesheet">
+<link href="css/font-awesome.css" rel="stylesheet">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<!-- Custom Fonts -->
+<!--
     <link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-
 -->
-   <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700italic,800italic' rel='stylesheet' type='text/css'>
-        <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700italic,800italic' rel='stylesheet' type='text/css'>
+<link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-
-
-
-
-    <script type="text/JavaScript">
-      
-
-    
+<script type="text/JavaScript">
     </script>
-
-
-    <script type="text/JavaScript">
+<script type="text/JavaScript">
         $(window).load(function() {
-
-
             $("#nav-toggle").click(function(){ 
-
             if(!($(".nav-wrap").hasClass("open")))
             {
-
-                
                     //$(".nav-wrap").css({ "right" : "0" });
                     $(".nav-wrap").addClass("open");
                     $("#nav-toggle").toggleClass("active");
                     $("#pagecontents").delay(2000).addClass("mopen");
-                    
-
                    // alert("Fuck");
-               
             }
-
             else
             {
                   $(".nav-wrap").removeClass("open");
@@ -72,100 +48,61 @@
                   $("#pagecontents").removeClass("mopen");
                 //alert("Fucker");
             }
-
              });
-
-
-
 /** Window Height n stuffs **/
-
 function jQupdatewindow(){
-
-
-
         var width = $(window).width();
         var height = $(window).height();
     //init_menu_posY = height - total_offset;
-
 /** EacH Section open animation **/
-
-
   $(".row").each(function(){
             //console.log ( $(this).offset().top + "anim");
             if ( ( $(window).scrollTop()  < $(this).offset().top + $(this).height() - 150) && $(window).scrollTop() + $(window).height() > $(this).offset().top +100 ) { //$(this).height()+ $(this).offset().top-150  > $(window).scrollTop()
-
                 $(this).css({'transform':'scale(1,1)','opacity':1, '-webkit-transform': 'scale(1,1)'});
             }else {
                 $(this).css({'transform':'scale(0.5,1)','opacity':0, '-webkit-transform': 'scale(0.5,1)'});
             }
         });
-
-
 };
-
-
 $(document).ready(jQupdatewindow);    // When the page first loads
 $(window).resize(jQupdatewindow);     // When the browser changes size
 $(window).scroll(jQupdatewindow); 
-
 /** end each section open animation **/
-
-
-
-
         });
     </script>
-
-    
-
 </head>
-
-
-
-
-
 <body id="page" class="index">
-
-
-     <section id="hexformation">
-            <div id="right-hex"></div>
-           <!-- <div id="left-hex"></div>
+<section id="hexformation">
+<div id="right-hex">
+</div>
+<!-- <div id="left-hex"></div>
             <<div id="bottom-right-hex"></div>
             <div id="bottom-left-hex"></div>-->
-        </section>
-
-        <section id="nav">
-            <div id="nav-toggle" href="#">
-                <span></span>
-            </div>
-
-            <div class="nav-wrap">
-                <ul>
-                    <li><a href="#MainHome">Home</a></li>
-                    <li><a href="#whatmakes">What?</a></li>
-                    <li><a href="#whatismp">Why?</a></li>
-                    <li><a href="#registerbanner">Get me in.</a></li>
-                    <li><a href="#theend">Contact</a></li>
-                </ul>
-            </div>
-        </section>
-
-
-    <div id="pagecontents"><!-- Website Wrap :) -->
-
-   
-  <div id="infoTabs">
-                </div>
-
-
-        <!-- #Mainhome == First Front Page of the website -->
-        <section id="MainHome">
-
-                
-                <div class="container">
-                    <div class="row">
-                        <div class="title-contain col-md-7 col-md-offset-3 ">
-                            <!--
+</section>
+<section id="nav">
+<div id="nav-toggle" href="#">
+    <span></span>
+</div>
+<div class="nav-wrap">
+    <ul>
+        <li><a href="#MainHome">Home</a></li>
+        <li><a href="#whatmakes">What?</a></li>
+        <li><a href="#whatismp">Why?</a></li>
+        <li><a href="#registerbanner">Get me in.</a></li>
+        <li><a href="#theend">Contact</a></li>
+    </ul>
+</div>
+</section>
+<div id="pagecontents">
+    <!-- Website Wrap :) -->
+    <div id="infoTabs">
+    </div>
+    <!-- #Mainhome == First Front Page of the website -->
+    <section id="MainHome">
+    <div class="container">
+        <div class="row">
+            <div class="title-contain col-md-7 col-md-offset-3 ">
+                <!--
                             <div class="page-title">
                                 <h1>Maker</h1>
                                  <div class="clear"></div>
@@ -175,8 +112,7 @@ $(window).scroll(jQupdatewindow);
                                  </div>
                             </div>
                         -->
-
-<!--- Anush's Maker Party Logo 
+                <!--- Anush's Maker Party Logo 
                         <div class="text-mp yellow">
             <div class="letter-container M">
                 <div class="M1 letter"></div>
@@ -231,173 +167,115 @@ $(window).scroll(jQupdatewindow);
                 <div class="Y3 letter"></div>       
             </div>
         </div>
-
         END ANUSH MAKER PARTY LOGO -->
-        <img src="img/MakerPartylogo.png" />
-        
-
-        
-                        <div>
-                            
-                            <h2>A Festival of Inventions and Inspiration!</h2>
+                <img src="img/MakerPartylogo.png"/>
+                <div>
+                    <h2>A Festival of Inventions and Inspiration!</h2>
+                </div>
+                <div class="row" id="dateid">
+                    <div class="container title-contain">
+                        <h1>September 20, 21, 22. 2014</h1>
+                        <h4>Mozilla Kerala \ Cochin University of Science And Technology, Kochi</h4>
                     </div>
-
-
-                    <div class="row" id="dateid">
-                        <div class="container title-contain"><h1>September 20, 21, 22.  2014</h1>
-<h4>Mozilla Kerala \ Cochin University of Science And Technology, Kochi</h4>
-                        </div>
-                        
-
-                        <div class="container alert"><a href="#registerbanner">Volunteer Registration will open soon!</a></div>
-
-                    
-
+                    <div class="container alert">
+                        <a href="#registerbanner">Volunteer Registration will open soon!</a>
                     </div>
+                </div>
             </div>
         </div>
-</div>
-
-
-        </section>
-
-
-
-
-
-
-
-        <section id="whatmakes" class="slant white bottom animated fadeInLeft">
-            <div class="container-fluid">
-                <h2 class="section-title">
-                <!--What we Love?-->
+    </div>
+    </section>
+    <section id="whatmakes" class="slant white bottom animated fadeInLeft">
+    <div class="container-fluid">
+        <h2 class="section-title">
+        <!--What we Love?-->
+        </h2>
+        <div class="row">
+            <div class="mDetail-1 col-md-7">
+                <h2 class="widb-title">
+                <strong>DISCOVER</strong>
                 </h2>
-
-                <div class="row">
-                    <div class="mDetail-1 col-md-7">
-                        <h2 class="widb-title">
-                            <strong>DISCOVER</strong>
-                            
-                        </h2>
-
-                        <p class="sc-para">Introduce yourself to new skills quickly through fun things to read, watch, listen or share.  The event has a simple format like science fair, where facilitators are sharing cutting edge technologies, each something new in a engaging way.
-                        </br></br>
-                        <!--
+                <p class="sc-para">
+                    Introduce yourself to new skills quickly through fun things to read, watch, listen or share. The event has a simple format like science fair, where facilitators are sharing cutting edge technologies, each something new in a engaging way. </br></br>
+                    <!--
                         <a href ="#">Register yourself here</a>
                     -->
-                        </p>
-                    </div>
-
-                    <div class="mDetail-2 col-md-5">
-                        <h2 class="widb-title"><strong>LEARN</strong>
-                           
-                        </h2>
-
-                         <p class="sc-para">Get your hands dirty. The best way to learn is through hands-on making and building! Create web pages, multimedia videos, or remixes that help you learn practical skills as you go.</p></br>
-                         <!--
+                </p>
+            </div>
+            <div class="mDetail-2 col-md-5">
+                <h2 class="widb-title"><strong>LEARN</strong>
+                </h2>
+                <p class="sc-para">
+                    Get your hands dirty. The best way to learn is through hands-on making and building! Create web pages, multimedia videos, or remixes that help you learn practical skills as you go.
+                </p>
+                </br>
+                <!--
                          <a href ="#">Register yourself here</a>
                      -->
-                    </div>
-
-                    
-                </div>
-
-
-                <div class="row">
-                    <div class="mDetail-4 col-md-7 col-md-push-5">
-                         <h2 class="widb-title"><strong>INSPIRE</strong>
-                         </h2>
-
-                         <p class="sc-para">Hear from a bunch of awesome souls who created really cool stuffs that will change our life. Innovators, Actors, Leaders, Entrepreneurs, Students... Worth giving your ears.</p>
-
-                    </div>
-                    <div class="mDetail-3 col-md-5 col-md-pull-7"> <h2 class="widb-title">JOIN US AT<strong>Kochi</strong></h2></div>
-                </div>
-
-                <div class="row">
-                    <div class="mDetail-5">
-                        <h2></h2>
-                    </div>
-                </div>
-
-
             </div>
-        </section>
-
-
-
-
-
-
-
-
-
-
-        <!-- #whatismp is the section for the detailing abt makerparty -->
-        <section id="whatismp" class="slant top"> 
-            <div class="container">
-                <div class="col-md-8">
-               <div class="row">
-                <h1> What is Maker Party? </h1>
-                <div class="sm-line"></div>
-                <p class="wimp-content col-md-8 col-md-offset-2">
-                    Maker Party is Mozilla's global campaign to teach the web. Through thousands of community-run events around the world, Maker Party unites educators, organizations and enthusiastic web users with hands-on learning and making.
-                </p>
-               </div>
-
-            
-
-
+        </div>
         <div class="row">
-
-                <h1>#KochiHacks</h1>
-                    <div class="sm-line"></div>
-                <div class="wimp-content col-md-8 col-md-offset-2">
-At the heart of Kochi and at one of the most pioneer educational institution of the country, Cochin University Of Science And Technology, we are expecting an audience of 3000+. The awesomeness doesn't stop here we are setting up about 50 stations to reach all kinds of stuffs ranging from how to start a computer to open robotics and much more. There will also be dedicated talks by leading personalities. Couple of sessions for Women folks to dive them into open source projects. And of course there will be exclusive promotions of FFOS Smartphones that is being recently launched on Indian market. This will totally be a festival of learning irrespective of age, first of its kind in the locale where people from all strata of life come and gather knowledge.Fun Unlimited love Spread the word about this Open Carnival #KochiHacks
-                </div>
-               </div>
-           </div>
-
-
-
-
-
-      
-
-
-
-
-       
-
-
-
-
-            <div class="col-md-4">
-                <div id="event-counts" class="row">
-                    <h1>3000+</h1><h2>Attendees</h2>
-                    <h1>50+</h1><h2>Learning Stations</h2> 
-                    <h1>40+</h1><h2>Makers</h2>
-                    <h1>10+</h1><h2>Talks</h2>
-                   <!-- <h1>3</h1><h2>Days</h2>-->
-                    <h3>and many more... :)</h3>
-
-                </div>
+            <div class="mDetail-4 col-md-7 col-md-push-5">
+                <h2 class="widb-title"><strong>INSPIRE</strong>
+                </h2>
+                <p class="sc-para">
+                    Hear from a bunch of awesome souls who created really cool stuffs that will change our life. Innovators, Actors, Leaders, Entrepreneurs, Students... Worth giving your ears.
+                </p>
             </div>
-
-
+            <div class="mDetail-3 col-md-5 col-md-pull-7">
+                <h2 class="widb-title">JOIN US AT<strong>Kochi</strong></h2>
             </div>
-
-        </section>
-
-
-<section id="watchvideo">
+        </div>
+        <div class="row">
+            <div class="mDetail-5">
+                <h2></h2>
+            </div>
+        </div>
+    </div>
+    </section>
+    <!-- #whatismp is the section for the detailing abt makerparty -->
+    <section id="whatismp" class="slant top">
     <div class="container">
-        
-    <h3 class="text-center"><a href="https://www.youtube.com/watch?v=oko6TzPQE6Y">Watch our video</a></h3>
-
-</div>
-</section>
-<!--
+        <div class="col-md-8">
+            <div class="row">
+                <h1> What is Maker Party? </h1>
+                <div class="sm-line">
+                </div>
+                <p class="wimp-content col-md-8 col-md-offset-2">
+                     Maker Party is Mozilla's global campaign to teach the web. Through thousands of community-run events around the world, Maker Party unites educators, organizations and enthusiastic web users with hands-on learning and making.
+                </p>
+            </div>
+            <div class="row">
+                <h1>#KochiHacks</h1>
+                <div class="sm-line">
+                </div>
+                <div class="wimp-content col-md-8 col-md-offset-2">
+                     At the heart of Kochi and at one of the most pioneer educational institution of the country, Cochin University Of Science And Technology, we are expecting an audience of 3000+. The awesomeness doesn't stop here we are setting up about 50 stations to reach all kinds of stuffs ranging from how to start a computer to open robotics and much more. There will also be dedicated talks by leading personalities. Couple of sessions for Women folks to dive them into open source projects. And of course there will be exclusive promotions of FFOS Smartphones that is being recently launched on Indian market. This will totally be a festival of learning irrespective of age, first of its kind in the locale where people from all strata of life come and gather knowledge.Fun Unlimited love Spread the word about this Open Carnival #KochiHacks
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div id="event-counts" class="row">
+                <h1>3000+</h1>
+                <h2>Attendees</h2>
+                <h1>50+</h1>
+                <h2>Learning Stations</h2>
+                <h1>40+</h1>
+                <h2>Makers</h2>
+                <h1>10+</h1>
+                <h2>Talks</h2>
+                <!-- <h1>3</h1><h2>Days</h2>-->
+                <h3>and many more... :)</h3>
+            </div>
+        </div>
+    </div>
+    </section>
+    <section id="watchvideo">
+    <div class="container">
+        <h3 class="text-center"><a href="https://www.youtube.com/watch?v=oko6TzPQE6Y">Watch our video</a></h3>
+    </div>
+    </section>
+    <!--
 <section id="registerbanner">
     <div class="container">
         <div class="row">
@@ -406,18 +284,12 @@ At the heart of Kochi and at one of the most pioneer educational institution of 
         <li><a href="#">Makers</a></li>
         <li><a href="#">Volunteer</a></li>
         <li><a href="#">Teaching</a></li>
-        
     </ul>
 </div>
 </div>
 </section>
 -->
-
-
-
-
-<footer id="theend">
-
+    <footer id="theend">
     <div class="row">
         <div class="col-md-3">
             <div id="endcredits">
@@ -427,105 +299,81 @@ At the heart of Kochi and at one of the most pioneer educational institution of 
                 <h4>CITTIC, CUSAT</h4>
             </div>
         </div>
-
         <div class="col-md-6">
-
-            
             <h2>Need Help?</h2>
             <div class="col-sm-4">
                 <p>
                     <strong>Abid Aboobaker</strong></br>
-                    Event Head / Mozilla Rep
-                    </br>
-                    Phone : 9746223022
-                    </br>abid2020@gmail.com
-                    </br></br>
-
+                    Event Head / Mozilla Rep </br>
+                    Phone : 9746223022 </br>type2abid [-@-] gmail.com </br></br>
                     <strong>Eby Jose</strong>
                     </br>
-                    Sponsorship / Marketting
-                    </br>
-                    Mob: 8089150636
-                    </br>mail.eby.jose@gmail.com
-
-
+                    Sponsorship / Marketting </br>
+                    Mob: 8089150636 </br>mail.eby.jose [-@-] gmail.com
                 </p>
             </div>
-
             <div class="col-sm-4">
                 <p>
                     <strong>Anatharaman</strong></br>
-                    HR / Marketting
+                    HR / Marketting </br>
+                    Phone : 8111920207 </br>anantharaman.aassk[-@-]gmail.com </br></br>
+                    <strong>Midhun Manoj</strong>
                     </br>
-                    Phone : 8111920207
-                    </br>anantharaman.aassk@gmail.com
-                    </br></br>
-
-                    <strong>Mithun M</strong>
-                    </br>
-                    Finance and Mozilla Rep
-                    </br>
-                    Mob: 9446534463
-                    </br>this4mithun@gmail.com
-
-
+                    Finance and Mozilla Rep </br>
+                    Mob: 9446534463 </br>this4mithun [-@-] gmail.com
                 </p>
             </div>
-
-
             <div class="col-sm-4">
                 <p>
                     <strong>Anush Anil Kumar</strong></br>
-                    Talks Organizer / Mozilla Rep
-                    </br>
-                    Phone : 8891026874
-                    </br>anushbmx@gmail.com
-
-                    </br></br>
-
+                    Talks Organizer / Mozilla Rep </br>
+                    Phone : 8891026874 </br>anushbmx [-@-] gmail.com </br></br>
                     <strong>Mehar MP</strong>
                     </br>
-                    Operations / Relations
-                    </br>
-                    Mob: 9020024148
-                    </br>mehar@anamega.com
-
-
+                    Operations / Relations </br>
+                    Mob: 9020024148 </br>mehar [-@-] anamega.com
                 </p>
             </div>
-
-
         </div>
-
-
-
+        <section>
+        </section>
         <div id="sociallinks" class="col-md-3">
             <h2>Social?</h2>
-            <a href="http://facebook.com/makerpartykochi" >Facebook </a> </br> <a>Twitter </a>
+            <a href="http://facebook.com/makerpartykochi"><i class="fa fa-facebook fa-2x"></i>
+            </a><a href=""><i class="fa fa-twitter fa-2x"></i></a>
+            <a href=""><i class="fa fa-youtube-square fa-2x"></i></a>
         </div>
     </div>
-</footer>
-
-
-    </div><!-- End Website Wrap -->
-
-
-
-
-
-
-    <div class="border-left"></div>
-    <div class="border-right"></div>
-    <div class="border-top"></div>
-    <div class="border-bottom"></div>
-
-
-
-
-     <!-- jQuery Version 1.11.0 -->
-   
- <script src="js/jquerymin.js"></script>
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
-
+    </footer>
+</div>
+<!-- End Website Wrap -->
+<div class="border-left">
+</div>
+<div class="border-right">
+</div>
+<div class="border-top">
+</div>
+<div class="border-bottom">
+</div>
+<!-- jQuery Version 1.11.0 -->
+<script src="js/jquerymin.js"></script>
+<!-- Bootstrap Core JavaScript -->
+<script src="js/bootstrap.min.js"></script>
+<!-- Start of StatCounter Code for Default Guide -->
+<script type="text/javascript">
+var sc_project=10004292; 
+var sc_invisible=1; 
+var sc_security="0810299c"; 
+var scJsHost = (("https:" == document.location.protocol) ?
+"https://secure." : "http://www.");
+document.write("<sc"+"ript type='text/javascript' src='" +
+scJsHost+
+"statcounter.com/counter/counter.js'></"+"script>");
+</script>
+<noscript>
+<div class="statcounter">
+    <a title="shopify analytics tool" href="http://statcounter.com/shopify/" target="_blank"><img class="statcounter" src="http://c.statcounter.com/10004292/0/0810299c/1/" alt="shopify analytics tool"></a>
+</div>
+</noscript>
+<!-- End of StatCounter Code for Default Guide -->
 </body>
